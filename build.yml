@@ -1,0 +1,31 @@
+#sdk: "/usr/local/opt/rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/rhodes-3.5.1.12"
+sdkversion: 3.5.0
+name: elpe
+version: 1.0
+#vendor: rhomobile
+vendor: shhavel
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile:
+  codesignidentity:
+  entitlements:
+  BundleIdentifier: com.rhomobile.elpe
+  BundleURLScheme: elpe
+wp:
+  productid: '7484d890-8298-0130-6e91-388d120631fa'
+symbian:
+  uid: '0xe0f923d2'
+android:
+  #version: 2.1
+  version: 4.2.2
+  emulator: em42
+  production:
+    certificate: /Users/alex/Development/elpe.keystore
+    password: "rise_from_nothing1"
+    alias: "elpe"
+
+extensions: ["json"]

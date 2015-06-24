@@ -1,0 +1,19 @@
+<div data-role="page">
+
+	<div data-role="header" data-position="inline">
+    <h1>Обиходная рецептура</h1>
+	</div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <% @categories.each do |category| %>
+          <li>
+            <a href="<%= url_for :action => :show, :id => category.object %>">
+              <%= category.name %>
+            </a>
+          </li>
+      <% end %>
+    </ul>
+  </div>
+
+</div>

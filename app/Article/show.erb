@@ -1,0 +1,15 @@
+<div data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1><%= @article.name %></h1>
+    <a href="<%= url_for :controller => :Category, :action => :show, :id => @article.category.object %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">
+      Back
+    </a>
+  </div>
+
+  <div data-role="content" style="background-image: none;">
+      <p><b><i><%= @article.name %></i></b></p>
+      <%= @article.text %>
+  </div>
+
+</div>
